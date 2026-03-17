@@ -26,6 +26,10 @@ CREATE OR ALTER SCHEMA {{env}}_tasty_bytes.harmonized;
 CREATE OR ALTER SCHEMA {{env}}_tasty_bytes.analytics;
 
 
+-- set database context
+USE DATABASE {{env}}_tasty_bytes;
+
+
 -- create warehouse for ingestion
 CREATE OR REPLACE WAREHOUSE demo_build_wh
    WAREHOUSE_SIZE = 'xlarge'
